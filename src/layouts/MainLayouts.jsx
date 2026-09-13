@@ -1,12 +1,14 @@
 import { Outlet } from 'react-router';
+import Navbar from '../pages/Navbar';
+// import Footer from '../pages/Footer';
 
 const MainLayouts = () => {
   return (
-    <>
-      <div className=" min-h-screen text-center flex justify-center items-center">
-        <Outlet />
-      </div>
-    </>
+    <div className='mt-5'>
+      <Navbar></Navbar>
+      <Outlet />
+      {/* <Footer></Footer> */}
+    </div>
   );
 };
 
